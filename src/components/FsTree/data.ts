@@ -10,7 +10,6 @@ const data = [
           {
             id: 9,
             label: "三级 1-1-1",
-            isLeaf: false,
           },
           {
             id: 10,

@@ -208,7 +208,7 @@ function handleCheckParent(node: ITreeNode, isCheck: boolean) {
     if (children) {
       children.forEach((node) => {
         if (!node.isChecked) isAll = false;
-        if (node.isChecked) isHalf = true;
+        if (node.isChecked || node.isHalfChecked) isHalf = true;
       });
     }
     if (isAll) {

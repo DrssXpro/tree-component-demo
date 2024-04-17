@@ -1,18 +1,11 @@
 <template>
   <div class="container">
-    <fs-tree
-      ref="treeRef"
-      :data="createData(2, 5, 10)"
-      key-field="id"
-      show-checkbox
-      :container-height="300"
-      virtual-scroll
-    >
-    </fs-tree>
+    <fs-tree ref="treeRef" :data="data" key-field="id" show-checkbox></fs-tree>
   </div>
 </template>
 
 <script setup lang="ts">
+import data from "./components/FsTree/data";
 import FsTree from "./components/FsTree/FsTree.vue";
 import { ref } from "vue";
 
