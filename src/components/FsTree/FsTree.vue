@@ -180,6 +180,7 @@ function handleSelectNode(node: ITreeNode) {
 
 function handleCheckNode(node: ITreeNode) {
   node.isChecked = !node.isChecked;
+  node.isHalfChecked = false;
   checkedSet.value[node.isChecked ? "add" : "delete"](node.key);
   handleCheckChildren(node, node.isChecked);
   handleCheckParent(node, node.isChecked);
